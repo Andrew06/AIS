@@ -232,7 +232,7 @@
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(424, 49);
+            this.bindingNavigator1.Size = new System.Drawing.Size(393, 49);
             this.bindingNavigator1.TabIndex = 11;
             // 
             // bindingNavigatorAddNewItem
@@ -338,6 +338,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.добавитьРасходToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -345,6 +346,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(575, 27);
             this.menuStrip1.TabIndex = 13;
             this.menuStrip1.Text = "КАТЕГОРИЯ МАТЕРИАЛОВ";
+            this.menuStrip1.Visible = false;
             // 
             // добавитьРасходToolStripMenuItem
             // 

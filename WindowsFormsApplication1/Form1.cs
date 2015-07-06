@@ -25,6 +25,20 @@ namespace WindowsFormsApplication1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'kompsericeDataSet.Производитель' table. You can move, or remove it, as needed.
+            this.производительTableAdapter.Fill(this.kompsericeDataSet.Производитель);
+            // TODO: This line of code loads data into the 'kompsericeDataSet.Материал' table. You can move, or remove it, as needed.
+            this.материалTableAdapter.Fill(this.kompsericeDataSet.Материал);
+            // TODO: This line of code loads data into the 'kompsericeDataSet.Мастер' table. You can move, or remove it, as needed.
+            this.мастерTableAdapter.Fill(this.kompsericeDataSet.Мастер);
+            // TODO: This line of code loads data into the 'kompsericeDataSet.Клиент' table. You can move, or remove it, as needed.
+            this.клиентTableAdapter.Fill(this.kompsericeDataSet.Клиент);
+            // TODO: This line of code loads data into the 'kompsericeDataSet.Категории' table. You can move, or remove it, as needed.
+            this.категорииTableAdapter.Fill(this.kompsericeDataSet.Категории);
+            // TODO: This line of code loads data into the 'kompsericeDataSet.Вид' table. You can move, or remove it, as needed.
+            this.видTableAdapter.Fill(this.kompsericeDataSet.Вид);
+            // TODO: This line of code loads data into the 'kompsericeDataSet.Ремонт' table. You can move, or remove it, as needed.
+            this.ремонтTableAdapter.Fill(this.kompsericeDataSet.Ремонт);
             // TODO: This line of code loads data into the 'kompsericeDataSet.Расход' table. You can move, or remove it, as needed.
             this.расходTableAdapter.Fill(this.kompsericeDataSet.Расход);
             // TODO: This line of code loads data into the 'kompsericeDataSet.Работа' table. You can move, or remove it, as needed.
@@ -148,6 +162,14 @@ namespace WindowsFormsApplication1
             Frm7.ShowDialog();
         }
 
- 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            toolStripMenuItem4_Click(sender, e);
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
      }
 }
