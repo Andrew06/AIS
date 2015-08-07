@@ -129,7 +129,10 @@ namespace WindowsFormsApplication1
                 worddocument = WordApplication.Documents.Open(fileName);
                 Word.Range wordcellrange = worddocument.Tables[1].Cell(14, 2).Range;
                 wordcellrange.Text = St;
-
+                wordcellrange = worddocument.Tables[1].Cell(15, 2).Range;
+                DateTime date = Convert.ToDateTime(dataGridView1[1, dataGridView1.CurrentRow.Index].Value);
+                St = date.ToShortDateString(); 
+                wordcellrange.Text = St;
                 worddocument.SaveAs2(fileSave, fileFormat);
 //              WordApplication.Quit(ref missing, ref missing, ref missing);
 //              WordApplication = null;
@@ -158,7 +161,10 @@ namespace WindowsFormsApplication1
                 worddocument = WordApplication.Documents.Open(fileName);
                 Word.Range wordcellrange = worddocument.Tables[1].Cell(12, 2).Range;
                 wordcellrange.Text = St;
-
+                wordcellrange = worddocument.Tables[1].Cell(13, 2).Range;
+                DateTime date = Convert.ToDateTime(dataGridView1[1, dataGridView1.CurrentRow.Index].Value);
+                St = date.ToShortDateString();
+                wordcellrange.Text = St;
                 worddocument.SaveAs2(fileSave, fileFormat);
                 //  WordApplication.Quit(ref missing, ref missing, ref missing);
                 //  WordApplication = null;
@@ -169,6 +175,53 @@ namespace WindowsFormsApplication1
                 //MessageBox.Show("Шаблон документа не найден!", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void справкаОПриемеТехникиВРемонтToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            button13_Click(sender, e);
+        }
+
+        private void нарядНаРаботыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            button14_Click(sender, e);
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string St = dataGridView1[0, dataGridView1.CurrentRow.Index].Value.ToString();
+                object missing = Type.Missing;
+                object fileName = Application.StartupPath + "\\Doc3.doc";
+                object fileSave = Application.StartupPath + "\\Doc\\Акт №" + St;
+                object fileFormat = Word.WdSaveFormat.wdFormatDocumentDefault;
+                Word.Application WordApplication = new Word.Application();
+                Word.Document worddocument = new Word.Document();
+                this.WindowState = FormWindowState.Minimized;
+                WordApplication.Visible = true;
+                worddocument = WordApplication.Documents.Open(fileName);
+                Word.Range wordcellrange = worddocument.Tables[1].Cell(18, 2).Range;
+                wordcellrange.Text = St;
+                wordcellrange = worddocument.Tables[1].Cell(19, 2).Range;
+                DateTime date = Convert.ToDateTime(dataGridView1[1, dataGridView1.CurrentRow.Index].Value);
+                St = date.ToShortDateString();
+                wordcellrange.Text = St;
+                worddocument.SaveAs2(fileSave, fileFormat);
+                //  WordApplication.Quit(ref missing, ref missing, ref missing);
+                //  WordApplication = null;
+                this.WindowState = FormWindowState.Normal;
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show("Шаблон документа не найден!", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void актВыполненныхРаботToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            button15_Click(sender, e);
         }
      }
 }

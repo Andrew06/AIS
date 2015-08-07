@@ -375,18 +375,21 @@
             this.справкаОПриемеТехникиВРемонтToolStripMenuItem.Name = "справкаОПриемеТехникиВРемонтToolStripMenuItem";
             this.справкаОПриемеТехникиВРемонтToolStripMenuItem.Size = new System.Drawing.Size(325, 24);
             this.справкаОПриемеТехникиВРемонтToolStripMenuItem.Text = "Справка о приеме техники в ремонт";
+            this.справкаОПриемеТехникиВРемонтToolStripMenuItem.Click += new System.EventHandler(this.справкаОПриемеТехникиВРемонтToolStripMenuItem_Click);
             // 
             // нарядНаРаботыToolStripMenuItem
             // 
             this.нарядНаРаботыToolStripMenuItem.Name = "нарядНаРаботыToolStripMenuItem";
             this.нарядНаРаботыToolStripMenuItem.Size = new System.Drawing.Size(325, 24);
             this.нарядНаРаботыToolStripMenuItem.Text = "Наряд на работы";
+            this.нарядНаРаботыToolStripMenuItem.Click += new System.EventHandler(this.нарядНаРаботыToolStripMenuItem_Click);
             // 
             // актВыполненныхРаботToolStripMenuItem
             // 
             this.актВыполненныхРаботToolStripMenuItem.Name = "актВыполненныхРаботToolStripMenuItem";
             this.актВыполненныхРаботToolStripMenuItem.Size = new System.Drawing.Size(325, 24);
             this.актВыполненныхРаботToolStripMenuItem.Text = "Акт выполненных работ";
+            this.актВыполненныхРаботToolStripMenuItem.Click += new System.EventHandler(this.актВыполненныхРаботToolStripMenuItem_Click);
             // 
             // фильтрыToolStripMenuItem
             // 
@@ -1146,6 +1149,7 @@
             this.button15.Text = "АКТ ВЫП. РАБОТ";
             this.button15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button12
             // 
