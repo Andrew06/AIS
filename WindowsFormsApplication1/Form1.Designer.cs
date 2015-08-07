@@ -84,6 +84,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.выполненаDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.кодработыDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.номерзаказаDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ремонтBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.работаBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.количествоDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -159,16 +163,13 @@
             this.мастерTableAdapter = new WindowsFormsApplication1.kompsericeDataSetTableAdapters.МастерTableAdapter();
             this.материалTableAdapter = new WindowsFormsApplication1.kompsericeDataSetTableAdapters.МатериалTableAdapter();
             this.производительTableAdapter = new WindowsFormsApplication1.kompsericeDataSetTableAdapters.ПроизводительTableAdapter();
-            this.ремонтBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.выполненаDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.кодработыDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.номерзаказаDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.заказBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kompsericeDataSet)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ремонтBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.работаBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.расходBindingSource)).BeginInit();
@@ -181,7 +182,6 @@
             this.bindingNavigator2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator3)).BeginInit();
             this.bindingNavigator3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ремонтBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -269,7 +269,6 @@
             // 
             this.bindingSource1.DataSource = this.kompsericeDataSet;
             this.bindingSource1.Position = 0;
-            this.bindingSource1.CurrentChanged += new System.EventHandler(this.bindingSource1_CurrentChanged);
             // 
             // kompsericeDataSet
             // 
@@ -323,7 +322,6 @@
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(67, 23);
             this.toolStripMenuItem1.Text = "Заказы";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // toolStripMenuItem4
             // 
@@ -506,7 +504,6 @@
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
             this.toolStripMenuItem3.Size = new System.Drawing.Size(89, 23);
             this.toolStripMenuItem3.Text = "Отчеты";
-            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
             // результатыДеятельностиКомпанииToolStripMenuItem
             // 
@@ -576,7 +573,6 @@
             this.label2.Size = new System.Drawing.Size(88, 22);
             this.label2.TabIndex = 5;
             this.label2.Text = "ЗАКАЗЫ";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -600,7 +596,6 @@
             this.label4.Size = new System.Drawing.Size(196, 22);
             this.label4.TabIndex = 5;
             this.label4.Text = "ФИЛЬТРЫ ЗАКАЗОВ";
-            this.label4.Click += new System.EventHandler(this.label2_Click);
             // 
             // label5
             // 
@@ -613,7 +608,6 @@
             this.label5.Size = new System.Drawing.Size(137, 22);
             this.label5.TabIndex = 5;
             this.label5.Text = "ДОКУМЕНТЫ";
-            this.label5.Click += new System.EventHandler(this.label2_Click);
             // 
             // dataGridView2
             // 
@@ -629,7 +623,29 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(499, 154);
             this.dataGridView2.TabIndex = 7;
-            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            // 
+            // выполненаDataGridViewCheckBoxColumn
+            // 
+            this.выполненаDataGridViewCheckBoxColumn.DataPropertyName = "Выполнена";
+            this.выполненаDataGridViewCheckBoxColumn.HeaderText = "Выполнена";
+            this.выполненаDataGridViewCheckBoxColumn.Name = "выполненаDataGridViewCheckBoxColumn";
+            // 
+            // кодработыDataGridViewTextBoxColumn
+            // 
+            this.кодработыDataGridViewTextBoxColumn.DataPropertyName = "Код_работы";
+            this.кодработыDataGridViewTextBoxColumn.HeaderText = "Код_работы";
+            this.кодработыDataGridViewTextBoxColumn.Name = "кодработыDataGridViewTextBoxColumn";
+            // 
+            // номерзаказаDataGridViewTextBoxColumn2
+            // 
+            this.номерзаказаDataGridViewTextBoxColumn2.DataPropertyName = "Номер_заказа";
+            this.номерзаказаDataGridViewTextBoxColumn2.HeaderText = "Номер_заказа";
+            this.номерзаказаDataGridViewTextBoxColumn2.Name = "номерзаказаDataGridViewTextBoxColumn2";
+            // 
+            // ремонтBindingSource
+            // 
+            this.ремонтBindingSource.DataMember = "Ремонт";
+            this.ремонтBindingSource.DataSource = this.bindingSource1;
             // 
             // работаBindingSource
             // 
@@ -791,7 +807,6 @@
             this.bindingNavigator1.Size = new System.Drawing.Size(301, 49);
             this.bindingNavigator1.TabIndex = 16;
             this.bindingNavigator1.Text = "bindingNavigator1";
-            this.bindingNavigator1.RefreshItems += new System.EventHandler(this.bindingNavigator1_RefreshItems);
             // 
             // bindingNavigatorCountItem
             // 
@@ -893,7 +908,6 @@
             this.bindingNavigator2.Size = new System.Drawing.Size(393, 49);
             this.bindingNavigator2.TabIndex = 16;
             this.bindingNavigator2.Text = "bindingNavigator1";
-            this.bindingNavigator2.RefreshItems += new System.EventHandler(this.bindingNavigator1_RefreshItems);
             // 
             // toolStripButton1
             // 
@@ -1015,7 +1029,6 @@
             this.bindingNavigator3.Size = new System.Drawing.Size(393, 49);
             this.bindingNavigator3.TabIndex = 16;
             this.bindingNavigator3.Text = "bindingNavigator1";
-            this.bindingNavigator3.RefreshItems += new System.EventHandler(this.bindingNavigator1_RefreshItems);
             // 
             // toolStripButton7
             // 
@@ -1120,7 +1133,6 @@
             this.button6.Text = "УДАЛИТЬ ЗАКАЗ";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button15
             // 
@@ -1160,6 +1172,7 @@
             this.button14.Text = "НАРЯД";
             this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button11
             // 
@@ -1199,7 +1212,7 @@
             this.button13.Text = "СПРАВКА";
             this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button7_Click);
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button10
             // 
@@ -1213,7 +1226,6 @@
             this.button10.Text = "№ ТЕХ. (откл.)";
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -1240,7 +1252,6 @@
             this.button7.Text = "ГОТОВ (откл.)";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button5
             // 
@@ -1254,7 +1265,6 @@
             this.button5.Text = "НАЛ. (откл.)";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -1268,7 +1278,6 @@
             this.button4.Text = "ГОТОВ (откл.)";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -1282,7 +1291,6 @@
             this.button3.Text = "ДОСТАВКА (откл.)";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -1351,29 +1359,6 @@
             // 
             this.производительTableAdapter.ClearBeforeFill = true;
             // 
-            // ремонтBindingSource
-            // 
-            this.ремонтBindingSource.DataMember = "Ремонт";
-            this.ремонтBindingSource.DataSource = this.bindingSource1;
-            // 
-            // выполненаDataGridViewCheckBoxColumn
-            // 
-            this.выполненаDataGridViewCheckBoxColumn.DataPropertyName = "Выполнена";
-            this.выполненаDataGridViewCheckBoxColumn.HeaderText = "Выполнена";
-            this.выполненаDataGridViewCheckBoxColumn.Name = "выполненаDataGridViewCheckBoxColumn";
-            // 
-            // кодработыDataGridViewTextBoxColumn
-            // 
-            this.кодработыDataGridViewTextBoxColumn.DataPropertyName = "Код_работы";
-            this.кодработыDataGridViewTextBoxColumn.HeaderText = "Код_работы";
-            this.кодработыDataGridViewTextBoxColumn.Name = "кодработыDataGridViewTextBoxColumn";
-            // 
-            // номерзаказаDataGridViewTextBoxColumn2
-            // 
-            this.номерзаказаDataGridViewTextBoxColumn2.DataPropertyName = "Номер_заказа";
-            this.номерзаказаDataGridViewTextBoxColumn2.HeaderText = "Номер_заказа";
-            this.номерзаказаDataGridViewTextBoxColumn2.Name = "номерзаказаDataGridViewTextBoxColumn2";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1427,6 +1412,7 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ремонтBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.работаBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.расходBindingSource)).EndInit();
@@ -1444,7 +1430,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator3)).EndInit();
             this.bindingNavigator3.ResumeLayout(false);
             this.bindingNavigator3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ремонтBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

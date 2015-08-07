@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Word = Microsoft.Office.Interop.Word;
 
 namespace WindowsFormsApplication1
 {
@@ -16,11 +17,6 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
           
-        }
-
-        private void bindingSource1_CurrentChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -48,29 +44,9 @@ namespace WindowsFormsApplication1
 
         }
 
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void toolStripMenuItem3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             this.label1.Text = System.DateTime.Now.ToLongTimeString() + ' ' + DateTime.Now.ToShortDateString();
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -82,36 +58,6 @@ namespace WindowsFormsApplication1
         private void cnmExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void bindingNavigatorMoveNextItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bindingNavigator1_RefreshItems(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void расходныеМатериалыToolStripMenuItem_Click(object sender, EventArgs e)
@@ -167,9 +113,62 @@ namespace WindowsFormsApplication1
             toolStripMenuItem4_Click(sender, e);
         }
 
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void button13_Click(object sender, EventArgs e)
         {
+            try
+            {
+                string St = dataGridView1[0, dataGridView1.CurrentRow.Index].Value.ToString();
+                object missing = Type.Missing;
+                object fileName = Application.StartupPath + "\\Doc1.doc";
+                object fileSave = Application.StartupPath + "\\Doc\\Справка №"+St;
+                object fileFormat = Word.WdSaveFormat.wdFormatDocumentDefault;
+                Word.Application WordApplication = new Word.Application();
+                Word.Document worddocument = new Word.Document();
+                this.WindowState = FormWindowState.Minimized;
+                WordApplication.Visible = true;
+                worddocument = WordApplication.Documents.Open(fileName);
+                Word.Range wordcellrange = worddocument.Tables[1].Cell(14, 2).Range;
+                wordcellrange.Text = St;
 
+                worddocument.SaveAs2(fileSave, fileFormat);
+//              WordApplication.Quit(ref missing, ref missing, ref missing);
+//              WordApplication = null;
+                this.WindowState = FormWindowState.Normal;
+            }
+            catch (Exception ex)
+            {
+              //  MessageBox.Show("Шаблон документа не найден!", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string St = dataGridView1[0, dataGridView1.CurrentRow.Index].Value.ToString();
+                object missing = Type.Missing;
+                object fileName = Application.StartupPath + "\\Doc2.doc";
+                object fileSave = Application.StartupPath + "\\Doc\\Наряд №" + St;
+                object fileFormat = Word.WdSaveFormat.wdFormatDocumentDefault;
+                Word.Application WordApplication = new Word.Application();
+                Word.Document worddocument = new Word.Document();
+                this.WindowState = FormWindowState.Minimized;
+                WordApplication.Visible = true;
+                worddocument = WordApplication.Documents.Open(fileName);
+                Word.Range wordcellrange = worddocument.Tables[1].Cell(12, 2).Range;
+                wordcellrange.Text = St;
+
+                worddocument.SaveAs2(fileSave, fileFormat);
+                //  WordApplication.Quit(ref missing, ref missing, ref missing);
+                //  WordApplication = null;
+                this.WindowState = FormWindowState.Normal;
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show("Шаблон документа не найден!", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(ex.Message);
+            }
         }
      }
 }
