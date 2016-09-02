@@ -20,10 +20,10 @@ namespace WindowsFormsApplication1
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'kompsericeDataSet.Материал' table. You can move, or remove it, as needed.
-            this.материалTableAdapter.Fill(this.kompsericeDataSet.Материал);
-            // TODO: This line of code loads data into the 'kompsericeDataSet.Категории' table. You can move, or remove it, as needed.
-            this.категорииTableAdapter.Fill(this.kompsericeDataSet.Категории);
+            // TODO: This line of code loads data into the 'kompserviceDataSet.Материал' table. You can move, or remove it, as needed.
+            this.материалTableAdapter.Fill(this.kompserviceDataSet.Материал);
+            // TODO: This line of code loads data into the 'kompserviceDataSet.Категории' table. You can move, or remove it, as needed.
+            this.категорииTableAdapter.Fill(this.kompserviceDataSet.Категории);
         } 
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)

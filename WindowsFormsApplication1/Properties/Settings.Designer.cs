@@ -26,11 +26,11 @@ namespace WindowsFormsApplication1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;AttachDbFilename=|DataDirectory|\\kompserice.mdf;Integ" +
-            "rated Security=True;Connect Timeout=30")]
-        public string kompsericeConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;AttachDbFilename=|DataDirectory|\\kompservice.mdf;Init" +
+            "ial Catalog=kompservice;Integrated Security=True")]
+        public string kompserviceConnectionString {
             get {
-                return ((string)(this["kompsericeConnectionString"]));
+                return ((string)(this["kompserviceConnectionString"]));
             }
         }
     }

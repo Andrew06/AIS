@@ -19,8 +19,8 @@ namespace WindowsFormsApplication1
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'kompsericeDataSet.Вид' table. You can move, or remove it, as needed.
-            this.видTableAdapter.Fill(this.kompsericeDataSet.Вид);
+            // TODO: This line of code loads data into the 'kompserviceDataSet.Вид' table. You can move, or remove it, as needed.
+            this.видTableAdapter.Fill(this.kompserviceDataSet.Вид);
 
         }
     }

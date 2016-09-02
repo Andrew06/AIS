@@ -19,8 +19,8 @@ namespace WindowsFormsApplication1
 
         private void Form6_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'kompsericeDataSet.Мастер' table. You can move, or remove it, as needed.
-            this.мастерTableAdapter.Fill(this.kompsericeDataSet.Мастер);
+            // TODO: This line of code loads data into the 'kompserviceDataSet.Мастер' table. You can move, or remove it, as needed.
+            this.мастерTableAdapter.Fill(this.kompserviceDataSet.Мастер);
 
         }
 

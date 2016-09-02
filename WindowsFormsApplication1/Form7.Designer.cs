@@ -33,6 +33,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.работаBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kompserviceDataSet = new WindowsFormsApplication1.kompserviceDataSet();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -52,13 +54,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.kompsericeDataSet = new WindowsFormsApplication1.kompsericeDataSet();
-            this.работаBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.работаTableAdapter = new WindowsFormsApplication1.kompsericeDataSetTableAdapters.РаботаTableAdapter();
+            this.работаTableAdapter = new WindowsFormsApplication1.kompserviceDataSetTableAdapters.РаботаTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kompsericeDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.работаBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kompserviceDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // label6
@@ -110,6 +110,16 @@
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(46, 46);
             this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // работаBindingSource
+            // 
+            this.работаBindingSource.DataMember = "Работа";
+            this.работаBindingSource.DataSource = this.kompserviceDataSet;
+            // 
+            // kompserviceDataSet
+            // 
+            this.kompserviceDataSet.DataSetName = "kompserviceDataSet";
+            this.kompserviceDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bindingNavigatorCountItem
             // 
@@ -280,16 +290,6 @@
             this.comboBox2.TabIndex = 13;
             this.comboBox2.ValueMember = "Имя_работы";
             // 
-            // kompsericeDataSet
-            // 
-            this.kompsericeDataSet.DataSetName = "kompsericeDataSet";
-            this.kompsericeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // работаBindingSource
-            // 
-            this.работаBindingSource.DataMember = "Работа";
-            this.работаBindingSource.DataSource = this.kompsericeDataSet;
-            // 
             // работаTableAdapter
             // 
             this.работаTableAdapter.ClearBeforeFill = true;
@@ -320,8 +320,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kompsericeDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.работаBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kompserviceDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -351,8 +351,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox2;
-        private kompsericeDataSet kompsericeDataSet;
+        private kompserviceDataSet kompserviceDataSet;
         private System.Windows.Forms.BindingSource работаBindingSource;
-        private kompsericeDataSetTableAdapters.РаботаTableAdapter работаTableAdapter;
+        private kompserviceDataSetTableAdapters.РаботаTableAdapter работаTableAdapter;
     }
 }

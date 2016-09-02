@@ -40,7 +40,7 @@
             this.факсDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.клиентBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.kompsericeDataSet = new WindowsFormsApplication1.kompsericeDataSet();
+            this.kompserviceDataSet = new WindowsFormsApplication1.kompserviceDataSet();
             this.bindingNavigator2 = new System.Windows.Forms.BindingNavigator(this.components);
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
@@ -53,7 +53,7 @@
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.клиентTableAdapter = new WindowsFormsApplication1.kompsericeDataSetTableAdapters.КлиентTableAdapter();
+            this.клиентTableAdapter = new WindowsFormsApplication1.kompserviceDataSetTableAdapters.КлиентTableAdapter();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -83,13 +83,13 @@
             this.toolStripButton12 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.label3 = new System.Windows.Forms.Label();
-            this.техникаTableAdapter = new WindowsFormsApplication1.kompsericeDataSetTableAdapters.ТехникаTableAdapter();
-            this.производительTableAdapter = new WindowsFormsApplication1.kompsericeDataSetTableAdapters.ПроизводительTableAdapter();
-            this.видTableAdapter = new WindowsFormsApplication1.kompsericeDataSetTableAdapters.ВидTableAdapter();
+            this.техникаTableAdapter = new WindowsFormsApplication1.kompserviceDataSetTableAdapters.ТехникаTableAdapter();
+            this.производительTableAdapter = new WindowsFormsApplication1.kompserviceDataSetTableAdapters.ПроизводительTableAdapter();
+            this.видTableAdapter = new WindowsFormsApplication1.kompserviceDataSetTableAdapters.ВидTableAdapter();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.клиентBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kompsericeDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kompserviceDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).BeginInit();
             this.bindingNavigator2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.техникаBindingSource)).BeginInit();
@@ -182,13 +182,13 @@
             // клиентBindingSource
             // 
             this.клиентBindingSource.DataMember = "Клиент";
-            this.клиентBindingSource.DataSource = this.kompsericeDataSet;
+            this.клиентBindingSource.DataSource = this.kompserviceDataSet;
             this.клиентBindingSource.CurrentChanged += new System.EventHandler(this.клиентBindingSource_CurrentChanged);
             // 
-            // kompsericeDataSet
+            // kompserviceDataSet
             // 
-            this.kompsericeDataSet.DataSetName = "kompsericeDataSet";
-            this.kompsericeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.kompserviceDataSet.DataSetName = "kompserviceDataSet";
+            this.kompserviceDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bindingNavigator2
             // 
@@ -362,7 +362,7 @@
             // техникаBindingSource
             // 
             this.техникаBindingSource.DataMember = "техника";
-            this.техникаBindingSource.DataSource = this.kompsericeDataSet;
+            this.техникаBindingSource.DataSource = this.kompserviceDataSet;
             // 
             // label2
             // 
@@ -405,7 +405,7 @@
             // производительBindingSource
             // 
             this.производительBindingSource.DataMember = "Производитель";
-            this.производительBindingSource.DataSource = this.kompsericeDataSet;
+            this.производительBindingSource.DataSource = this.kompserviceDataSet;
             // 
             // Column2
             // 
@@ -421,7 +421,7 @@
             // видBindingSource
             // 
             this.видBindingSource.DataMember = "Вид";
-            this.видBindingSource.DataSource = this.kompsericeDataSet;
+            this.видBindingSource.DataSource = this.kompserviceDataSet;
             // 
             // Название
             // 
@@ -630,7 +630,7 @@
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.клиентBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kompsericeDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kompserviceDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).EndInit();
             this.bindingNavigator2.ResumeLayout(false);
             this.bindingNavigator2.PerformLayout();
@@ -662,9 +662,9 @@
         private System.Windows.Forms.ToolStripButton toolStripButton5;
         private System.Windows.Forms.ToolStripButton toolStripButton6;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private kompsericeDataSet kompsericeDataSet;
+        private kompserviceDataSet kompserviceDataSet;
         private System.Windows.Forms.BindingSource клиентBindingSource;
-        private kompsericeDataSetTableAdapters.КлиентTableAdapter клиентTableAdapter;
+        private kompserviceDataSetTableAdapters.КлиентTableAdapter клиентTableAdapter;
         private System.Windows.Forms.ToolStripMenuItem выбратьToolStripMenuItem;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label6;
@@ -686,7 +686,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.BindingSource техникаBindingSource;
-        private kompsericeDataSetTableAdapters.ТехникаTableAdapter техникаTableAdapter;
+        private kompserviceDataSetTableAdapters.ТехникаTableAdapter техникаTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn кодклиентаDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn наименованиеDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn адресDataGridViewTextBoxColumn;
@@ -694,9 +694,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn факсDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource производительBindingSource;
-        private kompsericeDataSetTableAdapters.ПроизводительTableAdapter производительTableAdapter;
+        private kompserviceDataSetTableAdapters.ПроизводительTableAdapter производительTableAdapter;
         private System.Windows.Forms.BindingSource видBindingSource;
-        private kompsericeDataSetTableAdapters.ВидTableAdapter видTableAdapter;
+        private kompserviceDataSetTableAdapters.ВидTableAdapter видTableAdapter;
         private System.Windows.Forms.DataGridViewComboBoxColumn Column1;
         private System.Windows.Forms.DataGridViewComboBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Название;

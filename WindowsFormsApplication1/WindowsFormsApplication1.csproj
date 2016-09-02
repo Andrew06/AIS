@@ -50,6 +50,9 @@
   <PropertyGroup>
     <ApplicationIcon>mycomp_3125.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>WindowsFormsApplication1.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -114,10 +117,10 @@
     <Compile Include="Form7.Designer.cs">
       <DependentUpon>Form7.cs</DependentUpon>
     </Compile>
-    <Compile Include="kompsericeDataSet.Designer.cs">
+    <Compile Include="kompserviceDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>kompsericeDataSet.xsd</DependentUpon>
+      <DependentUpon>kompserviceDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -155,16 +158,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="kompsericeDataSet.xsc">
-      <DependentUpon>kompsericeDataSet.xsd</DependentUpon>
+    <None Include="kompserviceDataSet.xsc">
+      <DependentUpon>kompserviceDataSet.xsd</DependentUpon>
     </None>
-    <None Include="kompsericeDataSet.xsd">
+    <None Include="kompserviceDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>kompsericeDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>kompserviceDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="kompsericeDataSet.xss">
-      <DependentUpon>kompsericeDataSet.xsd</DependentUpon>
+    <None Include="kompserviceDataSet.xss">
+      <DependentUpon>kompserviceDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -180,6 +183,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="kompservice.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="kompservice_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>kompservice.mdf</DependentUpon>
+    </Content>
     <Content Include="mycomp_3125.ico" />
     <None Include="ico\Documents Add.png" />
     <None Include="ico\Documents Check.png" />
@@ -198,13 +208,6 @@
     <None Include="ico\Symbol Refresh 3.png" />
     <None Include="ico\Symbol Refresh 4.png" />
     <None Include="ico\Symbol Refresh.png" />
-    <Content Include="kompserice.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="kompserice_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>kompserice.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.1">

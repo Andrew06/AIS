@@ -50,12 +50,12 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.kompsericeDataSet = new WindowsFormsApplication1.kompsericeDataSet();
+            this.kompserviceDataSet = new WindowsFormsApplication1.kompserviceDataSet();
             this.видBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.видTableAdapter = new WindowsFormsApplication1.kompsericeDataSetTableAdapters.ВидTableAdapter();
+            this.видTableAdapter = new WindowsFormsApplication1.kompserviceDataSetTableAdapters.ВидTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kompsericeDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kompserviceDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.видBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -260,15 +260,15 @@
             this.comboBox2.TabIndex = 13;
             this.comboBox2.ValueMember = "Вид_техники";
             // 
-            // kompsericeDataSet
+            // kompserviceDataSet
             // 
-            this.kompsericeDataSet.DataSetName = "kompsericeDataSet";
-            this.kompsericeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.kompserviceDataSet.DataSetName = "kompserviceDataSet";
+            this.kompserviceDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // видBindingSource
             // 
             this.видBindingSource.DataMember = "Вид";
-            this.видBindingSource.DataSource = this.kompsericeDataSet;
+            this.видBindingSource.DataSource = this.kompserviceDataSet;
             // 
             // видTableAdapter
             // 
@@ -297,7 +297,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kompsericeDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kompserviceDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.видBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -326,8 +326,8 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ComboBox comboBox2;
-        private kompsericeDataSet kompsericeDataSet;
+        private kompserviceDataSet kompserviceDataSet;
         private System.Windows.Forms.BindingSource видBindingSource;
-        private kompsericeDataSetTableAdapters.ВидTableAdapter видTableAdapter;
+        private kompserviceDataSetTableAdapters.ВидTableAdapter видTableAdapter;
     }
 }

@@ -19,8 +19,8 @@ namespace WindowsFormsApplication1
 
         private void Form7_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'kompsericeDataSet.Работа' table. You can move, or remove it, as needed.
-            this.работаTableAdapter.Fill(this.kompsericeDataSet.Работа);
+            // TODO: This line of code loads data into the 'kompserviceDataSet.Работа' table. You can move, or remove it, as needed.
+            this.работаTableAdapter.Fill(this.kompserviceDataSet.Работа);
 
         }
     }

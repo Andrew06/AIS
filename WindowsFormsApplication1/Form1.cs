@@ -21,26 +21,46 @@ namespace WindowsFormsApplication1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'kompsericeDataSet.Производитель' table. You can move, or remove it, as needed.
-            this.производительTableAdapter.Fill(this.kompsericeDataSet.Производитель);
-            // TODO: This line of code loads data into the 'kompsericeDataSet.Материал' table. You can move, or remove it, as needed.
-            this.материалTableAdapter.Fill(this.kompsericeDataSet.Материал);
-            // TODO: This line of code loads data into the 'kompsericeDataSet.Мастер' table. You can move, or remove it, as needed.
-            this.мастерTableAdapter.Fill(this.kompsericeDataSet.Мастер);
-            // TODO: This line of code loads data into the 'kompsericeDataSet.Клиент' table. You can move, or remove it, as needed.
-            this.клиентTableAdapter.Fill(this.kompsericeDataSet.Клиент);
-            // TODO: This line of code loads data into the 'kompsericeDataSet.Категории' table. You can move, or remove it, as needed.
-            this.категорииTableAdapter.Fill(this.kompsericeDataSet.Категории);
-            // TODO: This line of code loads data into the 'kompsericeDataSet.Вид' table. You can move, or remove it, as needed.
-            this.видTableAdapter.Fill(this.kompsericeDataSet.Вид);
-            // TODO: This line of code loads data into the 'kompsericeDataSet.Ремонт' table. You can move, or remove it, as needed.
-            this.ремонтTableAdapter.Fill(this.kompsericeDataSet.Ремонт);
-            // TODO: This line of code loads data into the 'kompsericeDataSet.Расход' table. You can move, or remove it, as needed.
-            this.расходTableAdapter.Fill(this.kompsericeDataSet.Расход);
-            // TODO: This line of code loads data into the 'kompsericeDataSet.Работа' table. You can move, or remove it, as needed.
-            this.работаTableAdapter.Fill(this.kompsericeDataSet.Работа);
-            // TODO: This line of code loads data into the 'kompsericeDataSet.Заказ' table. You can move, or remove it, as needed.
-            this.заказTableAdapter.Fill(this.kompsericeDataSet.Заказ);
+            // TODO: This line of code loads data into the 'kompserviceDataSet.Работа' table. You can move, or remove it, as needed.
+            this.работаTableAdapter.Fill(this.kompserviceDataSet.Работа);
+            // TODO: This line of code loads data into the 'kompserviceDataSet.Расход' table. You can move, or remove it, as needed.
+            this.расходTableAdapter.Fill(this.kompserviceDataSet.Расход);
+            // TODO: This line of code loads data into the 'kompserviceDataSet.Ремонт' table. You can move, or remove it, as needed.
+            this.ремонтTableAdapter.Fill(this.kompserviceDataSet.Ремонт);
+            // TODO: This line of code loads data into the 'kompserviceDataSet.Заказ' table. You can move, or remove it, as needed.
+            this.заказTableAdapter.Fill(this.kompserviceDataSet.Заказ);
+            // TODO: This line of code loads data into the 'kompserviceDataSet.Ремонт' table. You can move, or remove it, as needed.
+            this.ремонтTableAdapter.Fill(this.kompserviceDataSet.Ремонт);
+            // TODO: This line of code loads data into the 'kompserviceDataSet.Расход' table. You can move, or remove it, as needed.
+            this.расходTableAdapter.Fill(this.kompserviceDataSet.Расход);
+            // TODO: This line of code loads data into the 'kompserviceDataSet.Работа' table. You can move, or remove it, as needed.
+            this.работаTableAdapter.Fill(this.kompserviceDataSet.Работа);
+            // TODO: This line of code loads data into the 'kompserviceDataSet.Расход' table. You can move, or remove it, as needed.
+            this.расходTableAdapter.Fill(this.kompserviceDataSet.Расход);
+            // TODO: This line of code loads data into the 'kompserviceDataSet.Работа' table. You can move, or remove it, as needed.
+            this.работаTableAdapter.Fill(this.kompserviceDataSet.Работа);
+            // TODO: This line of code loads data into the 'kompserviceDataSet.Заказ' table. You can move, or remove it, as needed.
+            this.заказTableAdapter.Fill(this.kompserviceDataSet.Заказ);
+            // TODO: This line of code loads data into the 'kompserviceDataSet.Производитель' table. You can move, or remove it, as needed.
+            //this.производительTableAdapter.Fill(this.kompserviceDataSet.Производитель);
+            //// TODO: This line of code loads data into the 'kompserviceDataSet.Материал' table. You can move, or remove it, as needed.
+            //this.материалTableAdapter.Fill(this.kompserviceDataSet.Материал);
+            //// TODO: This line of code loads data into the 'kompserviceDataSet.Мастер' table. You can move, or remove it, as needed.
+            //this.мастерTableAdapter.Fill(this.kompserviceDataSet.Мастер);
+            //// TODO: This line of code loads data into the 'kompserviceDataSet.Клиент' table. You can move, or remove it, as needed.
+            //this.клиентTableAdapter.Fill(this.kompserviceDataSet.Клиент);
+            //// TODO: This line of code loads data into the 'kompserviceDataSet.Категории' table. You can move, or remove it, as needed.
+            //this.категорииTableAdapter.Fill(this.kompserviceDataSet.Категории);
+            //// TODO: This line of code loads data into the 'kompserviceDataSet.Вид' table. You can move, or remove it, as needed.
+            //this.видTableAdapter.Fill(this.kompserviceDataSet.Вид);
+            //// TODO: This line of code loads data into the 'kompserviceDataSet.Ремонт' table. You can move, or remove it, as needed.
+            this.ремонтTableAdapter.Fill(this.kompserviceDataSet.Ремонт);
+            // TODO: This line of code loads data into the 'kompserviceDataSet.Расход' table. You can move, or remove it, as needed.
+            this.расходTableAdapter.Fill(this.kompserviceDataSet.Расход);
+            // TODO: This line of code loads data into the 'kompserviceDataSet.Работа' table. You can move, or remove it, as needed.
+            this.работаTableAdapter.Fill(this.kompserviceDataSet.Работа);
+            // TODO: This line of code loads data into the 'kompserviceDataSet.Заказ' table. You can move, or remove it, as needed.
+            this.заказTableAdapter.Fill(this.kompserviceDataSet.Заказ);
 
         }
 
@@ -222,6 +242,11 @@ namespace WindowsFormsApplication1
         private void актВыполненныхРаботToolStripMenuItem_Click(object sender, EventArgs e)
         {
             button15_Click(sender, e);
+        }
+
+        private void kompserviceDataSetBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
         }
      }
 }

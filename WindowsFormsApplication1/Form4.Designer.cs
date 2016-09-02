@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.производительBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.kompsericeDataSet = new WindowsFormsApplication1.kompsericeDataSet();
+            this.kompserviceDataSet = new WindowsFormsApplication1.kompserviceDataSet();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -52,9 +52,9 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.производительTableAdapter = new WindowsFormsApplication1.kompsericeDataSetTableAdapters.ПроизводительTableAdapter();
+            this.производительTableAdapter = new WindowsFormsApplication1.kompserviceDataSetTableAdapters.ПроизводительTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.производительBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kompsericeDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kompserviceDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             this.SuspendLayout();
@@ -71,12 +71,12 @@
             // производительBindingSource
             // 
             this.производительBindingSource.DataMember = "Производитель";
-            this.производительBindingSource.DataSource = this.kompsericeDataSet;
+            this.производительBindingSource.DataSource = this.kompserviceDataSet;
             // 
-            // kompsericeDataSet
+            // kompserviceDataSet
             // 
-            this.kompsericeDataSet.DataSetName = "kompsericeDataSet";
-            this.kompsericeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.kompserviceDataSet.DataSetName = "kompserviceDataSet";
+            this.kompserviceDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label5
             // 
@@ -295,7 +295,7 @@
             this.Text = "Марки техники";
             this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.производительBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kompsericeDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kompserviceDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
@@ -326,8 +326,8 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ComboBox comboBox2;
-        private kompsericeDataSet kompsericeDataSet;
+        private kompserviceDataSet kompserviceDataSet;
         private System.Windows.Forms.BindingSource производительBindingSource;
-        private kompsericeDataSetTableAdapters.ПроизводительTableAdapter производительTableAdapter;
+        private kompserviceDataSetTableAdapters.ПроизводительTableAdapter производительTableAdapter;
     }
 }

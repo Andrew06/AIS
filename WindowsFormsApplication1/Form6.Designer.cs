@@ -36,7 +36,7 @@
             this.телефонмастераDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.сертификатDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.мастерBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.kompsericeDataSet = new WindowsFormsApplication1.kompsericeDataSet();
+            this.kompserviceDataSet = new WindowsFormsApplication1.kompserviceDataSet();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.label6 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -53,10 +53,10 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.выбратьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.мастерTableAdapter = new WindowsFormsApplication1.kompsericeDataSetTableAdapters.МастерTableAdapter();
+            this.мастерTableAdapter = new WindowsFormsApplication1.kompserviceDataSetTableAdapters.МастерTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.мастерBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kompsericeDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kompserviceDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).BeginInit();
             this.bindingNavigator2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -109,12 +109,12 @@
             // мастерBindingSource
             // 
             this.мастерBindingSource.DataMember = "Мастер";
-            this.мастерBindingSource.DataSource = this.kompsericeDataSet;
+            this.мастерBindingSource.DataSource = this.kompserviceDataSet;
             // 
-            // kompsericeDataSet
+            // kompserviceDataSet
             // 
-            this.kompsericeDataSet.DataSetName = "kompsericeDataSet";
-            this.kompsericeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.kompserviceDataSet.DataSetName = "kompserviceDataSet";
+            this.kompserviceDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // toolStripButton6
             // 
@@ -302,7 +302,7 @@
             this.Load += new System.EventHandler(this.Form6_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.мастерBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kompsericeDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kompserviceDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).EndInit();
             this.bindingNavigator2.ResumeLayout(false);
             this.bindingNavigator2.PerformLayout();
@@ -332,9 +332,9 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         public System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem выбратьToolStripMenuItem;
-        private kompsericeDataSet kompsericeDataSet;
+        private kompserviceDataSet kompserviceDataSet;
         private System.Windows.Forms.BindingSource мастерBindingSource;
-        private kompsericeDataSetTableAdapters.МастерTableAdapter мастерTableAdapter;
+        private kompserviceDataSetTableAdapters.МастерTableAdapter мастерTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn кодмастераDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn имямастераDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn телефонмастераDataGridViewTextBoxColumn;

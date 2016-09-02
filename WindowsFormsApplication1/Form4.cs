@@ -19,8 +19,8 @@ namespace WindowsFormsApplication1
 
         private void Form4_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'kompsericeDataSet.Производитель' table. You can move, or remove it, as needed.
-            this.производительTableAdapter.Fill(this.kompsericeDataSet.Производитель);
+            // TODO: This line of code loads data into the 'kompserviceDataSet.Производитель' table. You can move, or remove it, as needed.
+            this.производительTableAdapter.Fill(this.kompserviceDataSet.Производитель);
         }
     }
 }

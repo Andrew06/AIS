@@ -20,14 +20,14 @@ namespace WindowsFormsApplication1
 
         private void Form5_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'kompsericeDataSet.Вид' table. You can move, or remove it, as needed.
-            this.видTableAdapter.Fill(this.kompsericeDataSet.Вид);
-            // TODO: This line of code loads data into the 'kompsericeDataSet.Производитель' table. You can move, or remove it, as needed.
-            this.производительTableAdapter.Fill(this.kompsericeDataSet.Производитель);
-            // TODO: This line of code loads data into the 'kompsericeDataSet.Техника' table. You can move, or remove it, as needed.
-            this.техникаTableAdapter.Fill(this.kompsericeDataSet.Техника);
-            // TODO: This line of code loads data into the 'kompsericeDataSet.Клиент' table. You can move, or remove it, as needed.
-            this.клиентTableAdapter.Fill(this.kompsericeDataSet.Клиент);
+            // TODO: This line of code loads data into the 'kompserviceDataSet.Вид' table. You can move, or remove it, as needed.
+            this.видTableAdapter.Fill(this.kompserviceDataSet.Вид);
+            // TODO: This line of code loads data into the 'kompserviceDataSet.Производитель' table. You can move, or remove it, as needed.
+            this.производительTableAdapter.Fill(this.kompserviceDataSet.Производитель);
+            // TODO: This line of code loads data into the 'kompserviceDataSet.Техника' table. You can move, or remove it, as needed.
+            this.техникаTableAdapter.Fill(this.kompserviceDataSet.Техника);
+            // TODO: This line of code loads data into the 'kompserviceDataSet.Клиент' table. You can move, or remove it, as needed.
+            this.клиентTableAdapter.Fill(this.kompserviceDataSet.Клиент);
 
         }
 

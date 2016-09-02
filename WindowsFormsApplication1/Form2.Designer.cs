@@ -32,11 +32,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.категорииBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.kompsericeDataSet = new WindowsFormsApplication1.kompsericeDataSet();
-            this.категорииTableAdapter = new WindowsFormsApplication1.kompsericeDataSetTableAdapters.КатегорииTableAdapter();
+            this.kompserviceDataSet = new WindowsFormsApplication1.kompserviceDataSet();
+            this.категорииTableAdapter = new WindowsFormsApplication1.kompserviceDataSetTableAdapters.КатегорииTableAdapter();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.материалBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.материалTableAdapter = new WindowsFormsApplication1.kompsericeDataSetTableAdapters.МатериалTableAdapter();
+            this.материалTableAdapter = new WindowsFormsApplication1.kompserviceDataSetTableAdapters.МатериалTableAdapter();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -62,7 +62,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.добавитьРасходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.категорииBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kompsericeDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kompserviceDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.материалBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
@@ -85,12 +85,12 @@
             // категорииBindingSource
             // 
             this.категорииBindingSource.DataMember = "Категории";
-            this.категорииBindingSource.DataSource = this.kompsericeDataSet;
+            this.категорииBindingSource.DataSource = this.kompserviceDataSet;
             // 
-            // kompsericeDataSet
+            // kompserviceDataSet
             // 
-            this.kompsericeDataSet.DataSetName = "kompsericeDataSet";
-            this.kompsericeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.kompserviceDataSet.DataSetName = "kompserviceDataSet";
+            this.kompserviceDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // категорииTableAdapter
             // 
@@ -113,7 +113,7 @@
             // материалBindingSource
             // 
             this.материалBindingSource.DataMember = "Материал";
-            this.материалBindingSource.DataSource = this.kompsericeDataSet;
+            this.материалBindingSource.DataSource = this.kompserviceDataSet;
             // 
             // материалTableAdapter
             // 
@@ -385,7 +385,7 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.категорииBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kompsericeDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kompserviceDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.материалBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
@@ -400,12 +400,12 @@
         #endregion
 
         private System.Windows.Forms.ComboBox comboBox1;
-        private kompsericeDataSet kompsericeDataSet;
+        private kompserviceDataSet kompserviceDataSet;
         private System.Windows.Forms.BindingSource категорииBindingSource;
-        private kompsericeDataSetTableAdapters.КатегорииTableAdapter категорииTableAdapter;
+        private kompserviceDataSetTableAdapters.КатегорииTableAdapter категорииTableAdapter;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.BindingSource материалBindingSource;
-        private kompsericeDataSetTableAdapters.МатериалTableAdapter материалTableAdapter;
+        private kompserviceDataSetTableAdapters.МатериалTableAdapter материалTableAdapter;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
